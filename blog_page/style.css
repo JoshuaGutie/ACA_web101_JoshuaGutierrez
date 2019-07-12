@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+}
+ 
+#container {
+background-color: white;
+width:50%;
+margin: auto;
+text-align:left;
+
+}
+
+main {
+
+    border-width: 5px;
+}
+
+article {
+    border: 2px solid gray;
+
+}
+
+
+article h2 {
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main article:nth-of-type(3) {text-align: center}
