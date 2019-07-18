@@ -1,0 +1,59 @@
+#container {
+    background-color:whitesmoke;
+    margin: auto;
+    text-align: left;
+    width: 95%;
+    border-color: gold;
+    border-style: groove;
+    border-width: 10px;
+    height: 960px;
+    
+
+}
+body {
+    background-color: lightblue;
+}
+
+#title {
+    background-color: rgba(94, 94, 238, 0.473);
+    width: 40%;
+    float: left;
+    height: 20%;
+    font-size: 30px;
+}
+main article:nth-of-type(1) {
+    float: right;
+    width:60%;
+    Background-color: lightcyan;
+    background-size: auto;
+    height:172.5px;
+}
+
+    main article:nth-of-type(2) {
+        float: left;
+        width:40%;
+        Background-color: lightcyan;
+        height: 250px;
+    }
+
+        main article:nth-of-type(3) {
+            float: right;
+            width:60%;
+            Background-color: whitesmoke;
+            height: 425px;
+            }
+
+    
+            main article:nth-of-type(4) {
+                float: left;
+                width:40%;
+                Background-color: lightcyan;
+                height: 175px;}
+        
+                .sum{
+                    background-image: linear-gradient(to bottom right, lightcyan, whitesmoke);
+}
+                
+                    
+            
+        
