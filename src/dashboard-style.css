@@ -1,0 +1,80 @@
+#container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    height:900px;
+    background-image: url(https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-template-areas: 
+    "greeting   calculator"
+    "greeting      calculator"
+    "clock      to-do "
+    "clock       to-do";
+    
+}
+.greeting {
+    text-align: center;
+    grid-area: greeting;
+    background-color: #346898;
+    background-image: linear-gradient(#0d1a26, #28547c );
+    background-size: 100% 100%;
+    height: 450px;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.calculator-keys {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #0d1a26;
+    
+    
+}
+
+.calculator {
+    border: 3px solid green;
+    background-color: #0d1a26;
+    grid-area: calculator;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+}
+
+.calculator-screen {
+    background-color: #0d1a26;
+    font-size:30px;
+    height: 30px;
+    color: whitesmoke;
+    padding-left: 20px;
+}
+
+#to-do {
+    grid-area:to-do;
+    background-color: #79a6d2;
+    background-image: linear-gradient( #28547c, #0d1a26);
+    font-size: 30px;
+}
+#clock {
+    grid-area: clock;
+    margin: auto;
+    top: 200px;
+    border-radius: 80%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: green;
+    font-size: 60px;
+    padding: 90px;
+    background-color: #B5D0E2;
+    display: flex;
+    height: 120px;
+    text-align: justify;
+    
+}
+
