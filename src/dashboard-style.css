@@ -3,13 +3,13 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25% 25%;
-    height:900px;
+    height:700px;
     background-image: url(https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     grid-template-areas: 
     "greeting   calculator"
-    "greeting      calculator"
+    "clock      calculator"
     "clock      to-do "
     "clock       to-do";
     
@@ -20,11 +20,11 @@
     background-color: #346898;
     background-image: linear-gradient(#0d1a26, #28547c );
     background-size: 100% 100%;
-    height: 450px;
+    height: 250px;
     color: whitesmoke;
     font-size: 50px;
     text-align: center;
-    
+
 }
 
 .calculator-keys {
@@ -38,7 +38,7 @@
 }
 
 .calculator {
-    border: 3px solid green;
+    border: 3px solid lightseagreen;
     background-color: #0d1a26;
     grid-area: calculator;
     margin: auto;
@@ -68,7 +68,7 @@
     border-radius: 80%;
     border-width: 6px;
     border-style: solid;
-    border-color: green;
+    border-color: lightseagreen;
     font-size: 60px;
     padding: 90px;
     background-color: #B5D0E2;
