@@ -28,13 +28,13 @@
 }
 
 .calculator-keys {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #0d1a26;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: flex-end;
     
-    
+}
+.insig {
+    display: flex;s
 }
 
 .calculator {
@@ -43,6 +43,7 @@
     grid-area: calculator;
     margin: auto;
     margin-top: 50px;
+    width: 200px;
     
     
 }
