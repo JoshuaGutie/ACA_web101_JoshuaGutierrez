@@ -1,0 +1,73 @@
+#container{
+    background-color:whitesmoke; 
+    height: 824px;
+    display: grid;
+    grid-template-rows: 490px auto;
+    
+}
+#space-image {
+    background-image: url(https://ak9.picdn.net/shutterstock/videos/18681329/thumb/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 850px;
+    height: 450px;
+    margin: auto;
+}
+#space-image h1{
+    color: whitesmoke;
+    font-size: 75px;
+    padding-left: 350px;
+    padding-top: 135px;
+    
+    
+}
+#content {
+    background-color: lightgrey;
+    height: 324px;
+    width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 20px;
+    grid-template-areas: 
+    " sm office contact"
+
+
+}
+.social-media {
+    text-align: center;
+    grid-area: sm;
+}
+.social-media p {
+    color: rgb(59, 59, 59);
+}
+
+
+.office-info {
+    grid-area: office;
+    text-align: center;
+}
+.office-info p {
+    color: rgb(59, 59, 59);
+}
+
+
+.contact {
+    grid-area: contact;
+    text-align: left;
+}
+.contact p{
+    color: rgb(59, 59, 59);
+    width: 200px;
+    height:30px;
+    background-color: white;
+
+}
+
+.contact h1{
+    color: rgb(59, 59, 59);
+    width: 200px;
+    height:150px;
+    background-color: white;
+
+}
