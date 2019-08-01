@@ -1,0 +1,119 @@
+#container {
+    display: grid;
+    grid-template-rows: auto 500px auto;
+    grid-template-rows: 121px 400px 200px 200px;
+    grid-template-areas: 
+    ".  headed . "
+    " image image image "
+    " ph1 article ph2"
+    " ph3 article ph4";
+    height: 900px
+}
+body{
+    background-color: lightgrey;
+}
+h1 {
+    text-align: center;
+}
+.tabs {
+    margin: 2% 1% 3%;
+    border: 3px solid rgb(75, 39, 240);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightblue;
+}
+.navigate {
+    padding-left: 245px
+}
+
+#home-image {
+    background-image: url(https://www.publicdomainpictures.net/pictures/80000/nahled/barber-shop-humour-illustration.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    grid-area: image;
+    
+}
+.headed {
+    grid-area: headed;
+}
+
+#home-image div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    width: 500px;
+}
+    #home-image h2 {
+        background-color: black;
+        color: whitesmoke;
+        margin: 30px;
+        font-size: 40px;
+    
+    }
+    .p1 {
+        background-color: lightblue;
+        color: black;
+        margin: 30px;
+        font-size: 30px;
+        border: 4px solid blue;
+    }
+
+    .p2 {
+        background-color: lightblue;
+        color: black;
+        margin: 30px;
+        font-size: 30px;
+        border: 4px solid blue;
+        
+    }
+
+    .p3 {
+        background-color: lightblue;
+        color: black;
+        margin: 30px;
+        background-size: auto;
+        font-size: 30px;
+        border: 4px solid blue;
+    }
+    .article {
+        grid-area: article;
+        width: 627px;
+        margin: auto;
+        border: 4px solid blue;
+        background-color: whitesmoke;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .article h2 {
+        text-align: center;
+    }
+
+    .ph1 {
+        grid-area: ph1;
+        background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEBAVFRUVEhAVEBAVFQ8VFRAQFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFw8QFy0dFx0tLS0rLSstKystKystLSstLS0tLS0tLS0tKy0rLSstNy0rKy0rLS0tLSsrLS0tKystLf/AABEIARcAtQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBAUGB//EADwQAAIBAgMFBgQEBQMFAQAAAAABAgMRBCExBRJBUWEGInGBkbETMqHBFdHh8FJicrLxFCNCM4KiwtIW/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIREBAQEBAAMBAAIDAQAAAAAAAAERAgMhMRJBURMicWH/2gAMAwEAAhEDEQA/AMOIQyQaNBJDodBWAQVhJBJAJINIeMSGriUtLce8/lVvdjVk1OokOIxlOHz1Irpr9EYO09quzSk/H7W4eJzGKxspaef5tmf21+M+u5n2gw8f+fopEUe1GFbs5teMZe5565PiwoxT1J+j8x6Z+K0Lb3xE1zSY9HadGfy1Y+Ddn9TzOFZx+VsnoV3fRMv7q/iPT2v0YLRyWyse18jcHdZZuD8Ys3cJtZSkqdWPw5v5f4J/0vg+jLus3mxfsA0SNAtFZBYYIZoAJDBgsABBCAjsSJApBIAkh0JBJAPFBr9vpzFFGdXxHxJ/Dh8sWt9pvvP+FPl90xbiybVuVW/9P1a/fAyNoztdtZ8I8EuCtwRvfDSSss27Qjr/AN/5HPbYjdO2fhyXH1OHVejnnI5jHVJSbfUpW/fU0MXTtpw9yv8ACaEqWVWlETJnT4g7n5mtZxFGBYp0/wDBJCl0LeHo3dvTqTVkWdnx4655/k+htzw0Zx3Zq6asm9VyfRp+pUwFDks72fVeHobUcPwf7txJK3+UGysVJS+DVd2v+lUes48Yvm0abMbEUN5buji+7JcHwafDiXtnYz4ke988cqi6/wAS6HXm76cO+cWGhg2gWjTAWDYNgsAWhDiAFBIZBpAJBxBSJIoCrtXF/Cptp96Xdj0fF+S+xmbNqqEbu/Vc3wRX7Q4u9ZQ4QVmurzf/AKoz44y8kuX9zOXd9u/jmR22Gm5Rfe1Sz5N8uSK20sB3W7WSay4tJadFbMbZtdWj1slzaebdjdqU41LRtk3xzv8A5SZmx1jzrF4CTcY2s28+llfMCpgO5fjvZncYvZe9vSS0jLS/zSlln6lWpsu8UlmrN/3aev0Od2WRqSVwssI8rLmPSwbyy5/Vfqda9ku8csnZX5PNu/XKxN+DuNss97/N/wDxLtT8RzeFwTa0zs0/HQuwwOXpfTJ2Vn6ex0lHZVn8uW8k9M1K6aLkdmZpOz3qb5ZNLn0JlX1GVhsJezXFZ8PXz9y3iKVtdfq1/gtwouC3XrfTg03a30a80ZG08bZ87Wz6M6SYzbqOdpaLNIpTm6dWNRZJ92ov31K9TF2lk+b+v5E0pqcWtb39dfc1K52a3GhiDZtXepRb1V0/FOxPY6vPZgWhrBgtABYQ9hAMEkMgkgHiiWC08vcCKJF9mB55j629VqS/nn/db7EVKp9E2/FkMpajb2fomcb7d58dDhMbayu7JLz5/Q2sBti0ld6KXHS2Tv4tM4yjWt52LMMRz46/X/6RmWyum+no+z9qZPete1PK2bkmk0+l7+hoQrU93PhBR8c3nbnkeb4baDs7PNrXzf6Gji9rdydm9UlyV5t/Y1+paY7ZYmklFO2tKWq7ik569bbr8wntClZ3snnfnvWi1/arHnNbbElbPpdfytpfRjS2s8nfPdhd87X/ADsP1DHoWI2tSjUbut12s1xTs/XVeRF+LRvbK13b+jdul1PO6u0HbXWz87B/iDVrckr314D9GR1209pJytfPdbvl5vxvZ+Ry208Xd3XN+jzt5O5SrY53T8V75FKtXv5/ZktE3x/0LODxdsm3k0/EyVLOw8J2fkGK7fYM+7NcpXXhJL7o0pGH2Zqpymv5It+NzdaO3Pxx6+gGYbBZWQCCaEAKDSGsOgCig4r99WBElh+XuEeXVY2b8SJasvbUpbtSa/nl6X/UoXzZxr0QW97hKrl5ryz/AEIRmyYq7h6vLmrdcyWdd7rX71bRQov3RJz/AH+9TLWpJ1cvN+XEff06p3KzYTeVvD3BqwpaeCFKrdECbEr2GGpZz18SPeuDf3QVtTSBi9PMkSGpxv6hLLMMun7GLOo/5aav1bk37I6YxuyOF3KDk9Zyv4JZL7m0ztz8cevoWgWGMyoAQ4gGCuMkEEPENABoDnO1mzYbvxVdScu81o1bVrnc4+cLZ8Hoz0fa+G+JT3ebS9Xn9DmtsbLtpHLeivqzj1f9np453nXObl9M/AD4fD6GtUwLi+76lSezaspb0cn7jV/NVYNJJO2ueaJtx8cr8fL9CX8Eqtt7iz1sk/TkaNHs1XqNbzaWXTLwJ6OeeqzFg29LZ9SX/QNfNZeP2PR+x3ZCnGtD4qbS0T4s6nth2So1EnTgoy1Ma6zifz9eE7udk1x9xsRHcbUr5JO1nx9jsdpdhpJ3jBrwv66kEOx8n86lpaz3s16mpYzeLfjlN1ZO+T06l7DbM3uP6nS0+yDbXddlpllbkbdPs9uRyViXr+icf24DFbNnDd3Xk2kaOH2NuxjVkk1vJNPim0r/AFNvaOFslFWb34W8W0jawWAl8KVOov8Ag8/DNP6IltxvnmahVJRW6st3upcrCaJcRG0pLr+RG0ern48PX2gGsFYYqBEOIgYIYIIdBIZBIAZrnzRm7Wob0JbubTcsuWqaNUjrYJW3lG8Wsld3XOzXDocPL6uvV4LvNjG2Ph1Ut1Onw+wY8jksDVdCrKDVrNOP9D0O02ftG6WfA516OfcWMNsSKehpf6CCV7D4WvcPaVe0HbgncGIMBP8A3o24M39tSzj0SMPs1hs96Tz3r+HQ3tt0+62uWvIc/E6v+2KtGClwDlhY8jL2binvbreiTRo1cWi6mBlh48ihtNxjF+AGL2jbQ5vbO0W1a/PyJurjHr1PiYiEVxn4JW4s7WVeGUU96W5uK3/Jysnbortt9Diez1NzxSdk1CLeel3ax02PrOF0neU4tSf8MeSNZtkZ3JrMrS3pOS0bbXhfL6ABgs9U9PDfd0DQzDBaFQIhCClEJAoNIiHCQyQSAQ8ZSimoNWesXf6PgPYdEvMsytc93n45rbeHlGrCo2nvJxdlZK2di9gqjVs8gu01O9Bv+GSl9n7lPYte6S0t7HHyc49Xh8lv12WzK7y4mnjYXpy/pMHA1VHNvT92Ldfat47ts3lb3OL0ue7Nds3RqunUzTbvbOUHx8Ve+Ro9qO3jSUaSdpPOXFLojktr7InKblCneTlko639wcNsWu29+nJJONpNPPPr1NT4xevfx6B2QnOtT+K72taLer43NTFz/fmY3Z/HSox3HFJLK3CyuXqmOjO7Wq1XTmZ1qfWbjpu3qc/jZa8X+Zu4+azv19OLt5nMY6q3d6WWXTk0Xlnrr0tdnnJOc45aRUmnnbW3masrt3bu3q+ZU2PQ3KUU9WnJ66yZcPXzxJ7/AJeHru31/ARh7DHRzCxmFYZgAIJoQDIJIZDowCSCGCRYEOIQwR4mlvQlF8Yteqf6HF4Cvu6369Grnco4PalHcqy5OUlnbVP9Tl5P7dvE6iNdyUd3NtdNbEc9nYp/LVpQutHvNx8XYwtm7TcHHTJ2t15XN+vjm+8rnC/Xr8fU/lSn2Z2jFqpC1W+acJuM/FX/ADHlsTalTOS3XwlOq216XG//AE9Wk+65W5xl7EtHtROq9ZdVvO1r3XhmXXon+P8AtYwWz8dZRqV6LWerm34aal7DQnTqLfesXf1ViTCVmlvS46LgUsdtHell1t4md1y7s30HaOOvpwbZi1m5TjFayaXVLK42JxDTfFWt5kux6TcviSWril4XX5G449T06ewggT1x4jAhjNFQIzQQwAiCaEANghrBGAkEMkOkA44hFUjlNvULzqLqmul0dWYe14f7r6wi/sc/J8dfF9cbTquLV+fD0O47OYyk0lJXvZen71OTxeHu7actCrRxNSm13mo97T8+Jwvt2lx7TSo4dR3o04ap/LB5359CaEcPaO9ShdLPuxvdcbnnGE7RPhJpZ2WWS52FPtFda3a0vbjk/KxMb3XT7ZxNFruJJNN5c1ocTidoWk1HPSzy9ilitqSm0orPktORYwGz3dOeb5chmG6PC0HUeenLm9bM6GjS3VH+qPuBs/CWNDE0rLws/RjfbWek9hmgrjHtj59CIcTKgWMECAwhCIGSCEgkZCCsMhwpCEM5DQ5l7Vh34vnF/Rl2tXaWUfN8PIx6lRufedzl33LMejxePqXVLG4a+foZtfDc1l5WOjxFLK5UlST1OTtjHpYKPDlxSaJls5P5n6Je5pRopZ2DjHoRqcqmGwsYZQjbm8/c2MJhuaI6FLoa+EpEaxPhKNuBJjaPd8n7F2hTCxNLug1jYeD3Vy4hM2MBhcrW4ZjYvZTzcMunM6+PvPVefy+PfjIGDq03F2krME9MuvLZgRmExmECMOIoQSO3/BqVktyOnJAR2RTi7qK9Dh/kdv8AF/65KlhJvSL88i1T2VN65HVRoJcEG6S5Izeuq1OOY5f8KtrcF4Gx0lSmU8RBcjFb5yfHK4+jZHOVfmudPtfO6RhSpakdki70SvKBLhFlYecLMKg3AqcAtwOnTAsYWmbGGiUcJSNOhEGr9CPMsTp3QNCJcpQIzSw9D2L/APp78AsPS6F2nTDNrGxWzIzVpIwMdsScM4d5cuK+x3vwiGeHvwN89WfGbzL9eZtcPoCdntTYsZ52s+Elk/M5fG4CdJ95ZcJLQ7c968/XjvP/ABUsIcR0c3pUROAaJVE8z1K/wkQVoWLszIxmIsKQqkyhiHcmVa6GnT4mW8c/jsO9TLhh82dTPCX1Ins3J8yOkcgqVptE1amXMXhbVIu2tzQls5SjoF9Oe3CehQ6FyeAaL+AwD8vcpqvSo2L2Hpl6ngehahgyM6gw9M0sNRCo4XoaFChaxcZtKjTLUYChENMuMhsNOJJcZyLhqCdMo4vBqSd0uuRoTqogqVSDjcdsDvdx2XIR1M03wEP1WfxymTDUitGY7qBRYiZh413NGrO5SqwFainhVY0Kcitu2DgyNYtqNw40AKBfpJWAxtobN3s7ZqzXqW6GCy4GluISdgMjEYHoSYTB2ytz5F+QKkAdLCosKmkRqQaKzRqyEpjxQcUE+GUh7j7o1gaTZHJEyiM0BDuXG+GStDOIxlFuiDEBjqoO5lWMyZEbPLMTgHFB7oJFGqswCxWiQxQaT0GXqTKVMtU2BbUiObGTFIAJMKCHUQ0gCiEmNFCZWUlySJAmSoIlTHAiwkVBISQkK5EDJAsNgSKAYhriIOZoyLdNFGgy/SZnXRNTQbQMRyohqxIFEtTRFukaKBYpsiiiWJUSqQSISSANS2CSBQQiCQmxhi6CTJEyBhomiaIaIkHcag0xwEFcqHAmO2RyYQEhCkxBXL0C/TMvCyNKlIy2tJjkcWGmEJguJIkPug1GohxH3RyppWCgDcKAEqCQyYQUwhCAQYCCQEiYSZHENAGM2M2BKQQTZHKYEqtitUroCw5DFV1lzEExzmCndGnSkIRmOi1TZLBDiKlHFEkUIQQmgbCEVKFiiIQEyCEIBxIQgHQ6EIKOI4hFDSkQVJiERFTEVjF2njd2LfJMQjPXxrn6bCY28U/B+ohCJPjVf//Z);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(75, 39, 240);
+    }
+    .ph2 {
+        grid-area: ph2;
+        background-image: url(https://pics.me.me/check-ou-my-bowlcut-funny-bowl-haircut-memes-53125081.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(75, 39, 240);
+    }
+    .ph3 {
+        grid-area: ph3;
+        background-image: url(https://www.telegraph.co.uk/content/dam/beauty/2016/06/28/Zendaya_hair_trans_NvBQzQNjv4BqBLexaPiOBa-lbTxCY9do8V0MgRHTHLnhb5IlX1DSkpM.jpg?imwidth=450);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(75, 39, 240);
+        
+    }
+    .ph4 {
+        grid-area: ph4;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXNiR3e0jYPxYIX9iNmVO5omrh9N94psiy6-zFgX7-m-xw7jie);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(75, 39, 240);
+    }
