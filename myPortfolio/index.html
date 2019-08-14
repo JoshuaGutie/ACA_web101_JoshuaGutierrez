@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="animate.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>My Portfolio</title>
   </head>
@@ -11,10 +12,10 @@
     <header>
       <img
         src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
-        class="logo"
+        class="logo animated jello infinite"
         alt="austin coding academy logo"
       />
-      <nav class="topButtons">
+      <nav class="topButtons animated infinite tada delay-2s">
         <a class="has-border">Contact Me</a>
         <a class="has-border" href="./src/resume.html">Resume</a>
         <a class="has-border">About Me</a>
@@ -23,7 +24,7 @@
     </header>
     <main>
       <img src="./myProfilePic.JPG" id="profile-pic" alt="Head shot of Me" />
-      <div id="vid">
+      <div class="vid animated bounceInRight">
         <iframe
           width="560"
           height="315"
@@ -33,8 +34,8 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div id="form">
-        <form>
+      <div class="form">
+        <form class="amimated shake infinite">
           Full name <input type="text" name="name" id="name" required /> <br />
           Email <input type="text" name="name" id="name" required /> <br />Date
           of Birth<input type="date" name="DOB" id="date-of-birth" required />
@@ -43,13 +44,13 @@
         </form>
       </div>
 
-      <h1>
+      <h1 class="animated infinite bounce delay-2s">
         Joshua Gutierrez
       </h1>
-      <h2>
+      <h2 class="lol">
         Student Of Web Development
       </h2>
-      <button id="portfolio">Portfolio</button>
+      <button id="portfolio" class="animated shake infinite">Portfolio</button>
       <a class="small-text" href="https://austincodingacademy.com/"
         >© Austin Coding Academy</a
       >

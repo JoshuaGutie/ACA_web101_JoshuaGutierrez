@@ -34,11 +34,11 @@ main {
     "pic pic pic";
 }
 
-#vid {
+.vid {
   grid-area: vid;
 }
 
-#form {
+.form {
   grid-area: form;
   font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -121,6 +121,20 @@ button {
   color: white;
   letter-spacing: 5px;
   font-style: italic;
+}
+
+.lol {
+  color: black;
+  background-color: red;
+  padding: 20px;
+  transition: 1s;
+}
+
+.lol:hover {
+  color: blue;
+  background-color: pink;
+  transform: rotate(360deg);
+  padding: 60px;
 }
 /* Extra Small and up (Portrait Phones) */
 
