@@ -133,7 +133,7 @@ button {
 .lol:hover {
   color: blue;
   background-color: pink;
-  transform: rotate(360deg);
+  transform: rotateX(360deg);
   padding: 60px;
 }
 /* Extra Small and up (Portrait Phones) */
