@@ -1,0 +1,35 @@
+.container div {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin: auto;
+  border: 3px solid black;
+  margin-bottom: 20px;
+}
+
+.container:hover {
+}
+
+.container div:nth-child(odd) {
+  background-color: red;
+  right: 0;
+  transition: 4s;
+}
+
+.container div:nth-child(even) {
+  background-color: blue;
+  right: 0;
+  transition: 4s;
+}
+
+.container:hover > div:nth-child(odd) {
+  transform: translate(800px) rotate(360deg);
+  background-color: purple;
+}
+
+.container:hover > div:nth-child(even) {
+  height: 100px;
+  width: 100px;
+  transform: translate(-800px) rotate(-360deg);
+  background-color: pink;
+}
