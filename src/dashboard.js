@@ -17,4 +17,26 @@ $(function() {
     let $this = $(this);
     $this.remove();
   });
+  //New
 });
+
+function getLocation() {
+  if (navigator.geolocation) {
+    console.log("getLocation");
+    navigator.geolocation.getCurrentPosition(displayPosition);
+  } else {
+    $location.innerHTML = "Location Not Available";
+  }
+}
+
+function displayPosition(position) {
+  console.log(position);
+  let $location = $("#location");
+  console.log($location);
+  $location.text(
+    "Longitude:" +
+      position.coords.longitude +
+      "Latitude:" +
+      position.coords.longitude
+  );
+}
