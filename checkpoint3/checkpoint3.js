@@ -35,7 +35,7 @@ $(document).ready(function() {
           .data("cost")
           .toPrecision(2)
       );
-      data.sleepPace += parseFloat($(this).data("val")); //What do parseInt and parseFloat do?
+      data.sleepPace += parseFloat($(this).data("val"));
       $(this)
         .children("span")
         .html(

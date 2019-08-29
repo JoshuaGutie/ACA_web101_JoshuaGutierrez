@@ -4,12 +4,29 @@ body {
   background-color: #211d54;
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 90px 50px 600px 900px;
+  grid-template-rows: 90px 50px 400px 300px 900px;
   grid-template-areas:
     "header header header header header header header header header header"
     "title title title title title title title title title title"
     "video video video video video contact contact contact contact contact"
+    "under under under under under under under under under under"
     "foot foot foot foot foot foot foot foot foot foot";
+}
+.under {
+  grid-area: under;
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  background-color: #141133;
+  border: 2px orange solid;
+}
+
+.under p {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  padding: auto;
 }
 
 #about {
