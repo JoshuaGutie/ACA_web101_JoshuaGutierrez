@@ -20,7 +20,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  transition: 0.07s;
+  transition: 0.1s;
 }
 
 .sound {
@@ -34,10 +34,11 @@
 kbd {
   text-align: center;
   margin: auto;
+  color: lightseagreen;
   text-shadow: 1px 1px orange;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: orange;
+  border-color: lightseagreen;
 }
